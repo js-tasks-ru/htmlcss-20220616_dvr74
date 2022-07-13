@@ -1,52 +1,52 @@
-body{
-  display: flex;
-  gap: 15px;
-}
+
 
 .button
 {
-width: 182px;
-height: 48px;
-border: 0px;
+
 font-family: 'Roboto', sans-serif;
-font-weight: 50;
-font-size: 12px;
+font-weight: 500;
+font-size: 16px;
 line-height: 19px;
 text-align: center;
 color: var(--white);
 border-radius: 8px;
-display: flex;
+display: inline-flex;
 justify-content: center;
-align-items: center;    
+align-items: center;
+padding: 5px 30px 5px 30px;  
+white-space: nowrap;
+border: none;
+text-decoration: none;
+transition: 1s;
 }
 
-.button_primary {
+.button_primary 
+{
     background-color:var(--blue1);
-    border: none;
+
     color: var(--white);
-    text-decoration: none;
-    transition: 1s;
+    
   }
 
   .button_primary:hover,
   .button_primary:active
   {
-    background-color :var(--blue2);
+    background-color:var(--blue2);
   }
 
-.button_primary-disabled:disabled
+.button_primary-disabled
 {
   background-color: var(--blue1);
-  border: none;
+
   color: var(--white);
-  text-decoration: none;
+
 }
 
   .button_secondary {
     background-color: var(--secondary);
-    border: none;
+
     color: var(--white);
-    text-decoration: none;
+  
   }
 
   .button_secondary:hover
@@ -54,20 +54,19 @@ align-items: center;
     background-color : var(--purple1);
   }
 
-  .button_secondary-disabled:disabled
+  .button_secondary-disabled
   {
     background-color:var(--secondary);
-    border: none;
+
     color: var(--white);
-    text-decoration: none;
+
   }
 
   .button_alternate {
     background-color: var(--white);
     color: var(--grey-4);
-    transition: 1s;
     border: 1px solid var(--grey-3);
-    border-style: solid;
+
   }
 
   .button_alternate:hover,
@@ -77,15 +76,16 @@ align-items: center;
     color :var(--grey-4);
   }
 
-  .button_alternate-disabled:disabled {
+  .button_alternate-disabled
+   {
     background-color: var(--white);
     color: var(--grey-3);
-    transition: 1s;
     border: 1px solid var(--grey-3);
-    border-style: solid;
+
   }
   
   .button:disabled
   {
  opacity: 0.5;
+ pointer-events: none;
   }
