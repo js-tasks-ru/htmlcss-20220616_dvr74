@@ -1,1 +1,91 @@
-/* Стилизация кнопки */
+
+
+.button
+{
+
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: var(--white);
+border-radius: 8px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 5px 30px 5px 30px;  
+white-space: nowrap;
+border: none;
+text-decoration: none;
+transition: 1s;
+}
+
+.button_primary 
+{
+    background-color:var(--blue1);
+
+    color: var(--white);
+    
+  }
+
+  .button_primary:hover,
+  .button_primary:active
+  {
+    background-color:var(--blue2);
+  }
+
+.button_primary-disabled
+{
+  background-color: var(--blue1);
+
+  color: var(--white);
+
+}
+
+  .button_secondary {
+    background-color: var(--secondary);
+
+    color: var(--white);
+  
+  }
+
+  .button_secondary:hover
+  {
+    background-color : var(--purple1);
+  }
+
+  .button_secondary-disabled
+  {
+    background-color:var(--secondary);
+
+    color: var(--white);
+
+  }
+
+  .button_alternate {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+
+  }
+
+  .button_alternate:hover,
+  .button_alternate:active
+  {
+    border: 1px solid var(--black);
+    color :var(--grey-4);
+  }
+
+  .button_alternate-disabled
+   {
+    background-color: var(--white);
+    color: var(--grey-3);
+    border: 1px solid var(--grey-3);
+
+  }
+  
+  .button:disabled
+  {
+ opacity: 0.5;
+ pointer-events: none;
+  }
